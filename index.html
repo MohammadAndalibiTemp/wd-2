@@ -23,6 +23,7 @@
             <label for="UserName">نام:</label>
             <input type="text" name="UserName" class="content-text">
             <br><br>
+            
             <label for="UserFamilyname">نام خانوادگی:</label>
             <input type="text" name="UserFamilyname" class="content-text">  
             <br><br>
@@ -32,11 +33,13 @@
             <label for="Email"> آدرس پست الکترونیکی:</label>
             <input type="text" name="Email" class="content-text"/>            
             <br><br>
-            <label for="PhoneNumber placeholder="09*********""  pattern="[09][0-9]{9}" required>شماره تلفن همراه: </label>
-            <input type="text" name="PhoneNumber" class="content-text">
+
+            <label for="PhoneNumber" >شماره تلفن همراه: </label>
+            <input type="tel" name="PhoneNumber" class="content-text" placeholder="*********09"  pattern="09[0-9]{9}" required >
             <br><br>
+            
             <label for="Ssn"> کد ملی:</label>
-            <input type="text" name="Ssn" class="content-text">
+            <input type="password" name="Ssn" class="content-text" inputmode="numeric" minlength="12" maxlength="12" placeholder="123-456789-0" pattern="[0-9]{3}-[0-9]{6}-[0-9]" required  >
             <br><br>
             <label for="Password1">رمز عبور:</label>
             <input type="text" name="Password1" class="content-text">

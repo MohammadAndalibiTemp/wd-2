@@ -25,13 +25,17 @@ function formValidation() {
     */
     var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     var errorMessage = "";
+    
     if (name==""){
         errorMessage += "- نام را وارد کنید <br/>";}
     else if (name.length < 3){        
         errorMessage += "* نام باید بیش از 3 کاراکتر باشد <br/>";}
     else if (name.length > 50){        
             errorMessage += "* نام باید کم تر از 50 کاراکتر باشد <br/>";}
+   
+
     
+        
     if (familyname==""){
         errorMessage += "- نام خانوادگی را وارد کنید <br/>";}
     else if (familyname.length < 3){        
@@ -51,6 +55,7 @@ function formValidation() {
         {
         errorMessage +="ایمیل نا معتبر است!";
         }
+    
     if (phonenumber==""){
         errorMessage += "- شماره تلفن را وارد کنید <br/>";}
         
