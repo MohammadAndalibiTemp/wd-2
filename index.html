@@ -1,18 +1,25 @@
 <html>
-    <link rel="stylesheet" type="text/css" href="main.css"/>
-    <script src="main.js"></script>
-    <meta charset="utf-8"/>
+    
     <head>
         <title>فرم</title>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <script src="main.js"></script>
+        <meta charset="utf-8"/>
     </head>
     <body dir="rtl">
+    <p id="Uimessage" style="color: red;"></p>
+   <form name="form1" action="#" method="POST">
+
+
         <div class="content">
             <div class="content-item">
-            <label for="Subject">عنوان</label>
-            <select name="Subject" class="content-select" > 
-                <option value="0">مذکر</option>
-                <option value="1">مونث</option>
-            </select><br>
+            <label for="Gender">جنسیت : </label>
+            <input type="radio" name="Gender" value="male">مذکر</input>
+            <input type="radio" name="Gender" value="female">مونث</input>
+            <input type="radio" name="Gender" value="male-female">غیره</input>
+
+            
+            <br>
             <label for="UserName">نام:</label>
             <input type="text" name="UserName" class="content-text">
             <br><br>
@@ -23,33 +30,46 @@
             <input type="text" name="User_Eng_Name_Familyname" class="content-text">            
             <br><br>
             <label for="Email"> آدرس پست الکترونیکی:</label>
-            <input type="text" name="Email" class="content-text">            
+            <input type="text" name="Email" class="content-text"/>            
             <br><br>
-            <label for="PhoneNumber">شماره تلفن همراه: </label>
+            <label for="PhoneNumber placeholder="09*********""  pattern="[09][0-9]{9}" required>شماره تلفن همراه: </label>
             <input type="text" name="PhoneNumber" class="content-text">
             <br><br>
             <label for="Ssn"> کد ملی:</label>
             <input type="text" name="Ssn" class="content-text">
             <br><br>
-            <label for="Password">رمز عبور:</label>
-            <input type="text" name="Password" class="content-text">
+            <label for="Password1">رمز عبور:</label>
+            <input type="text" name="Password1" class="content-text">
             <br><br>
-            <label for="Password">تایید رمز عبور:</label>
-            <input type="text" name="Password" class="content-text">
+            <label for="Password2">تایید رمز عبور:</label>
+            <input type="text" name="Password2" class="content-text">
             <br><br>
             <label for="Address">آدرس:  </label>
             <input type="text" name="Address" class="content-text">
             <br><br>
             <label for="Birthday">تاریخ تولد: </label>
-            <input type="text" name="Birthday" class="content-text">
+            <input type="date" name="Birthday" class="content-text">
             <br><br>
-            <label for="Subject"> وضعیت تأهل: </label>
-            <select name="Subject" class="content-select" > 
+            <label for="Status"> وضعیت تأهل: </label>
+            <select name="Status" class="content-select" > 
+                
                 <option value="0">مجرد</option>
                 <option value="1">متاهل</option>
-            </select><br>
+            </select><br><br>
+            
+            <label for="checkbox_"> انتخاب علاقمندی ها: </label>
+            <div class="multiselect" name="checkbox_">
+                <label><input type="checkbox" name="option[]" value="1" />برنامه نویسی</label>
+                <label><input type="checkbox" name="option[]" value="2" />مطالعه</label>
+                <br><label><input type="checkbox" name="option[]" value="3" />پژوهش</label>
+                <label><input type="checkbox" name="option[]" value="4" />یادگیری</label>
+
+            </div>
+            <br>
+            <input type="submit" name="uiSubmit" onclick="return formValidation()" value="ثبت"  />
         </div>
 
         </div>
+    </form>
     </body>
 </html>

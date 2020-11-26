@@ -39,3 +39,11 @@ body{
     padding: 10px;
 
 }
+
+.multiselect{
+    
+    width: 20em;
+    height: auto;
+    border: solid 2px darkcyan;
+    overflow: auto;
+}
