@@ -1,3 +1,5 @@
+
+<!DOCTYPE html>
 <html>
     
     <head>
@@ -8,6 +10,9 @@
     </head>
     <body dir="rtl">
     <p id="Uimessage" style="color: red;"></p>
+    <p id="Uimessage1" style=" color: red;"></p>
+    <p id="Uimessage2" style=" color: red;"></p>
+
    <form name="form1" action="#" method="POST">
 
 
@@ -21,25 +26,25 @@
             
             <br>
             <label for="UserName">نام:</label>
-            <input type="text" name="UserName" class="content-text">
+            <input type="text" name="UserName" class="content-text" onkeypress="Check_P(event)">
             <br><br>
             
             <label for="UserFamilyname">نام خانوادگی:</label>
-            <input type="text" name="UserFamilyname" class="content-text">  
+            <input type="text" name="UserFamilyname" class="content-text" onkeypress="Check_P(event)">  
             <br><br>
             <label for="User_Eng_Name_Familyname"> نام و نام خانودگی(انگلیسی):</label>
-            <input type="text" name="User_Eng_Name_Familyname" class="content-text">            
+            <input type="text" name="User_Eng_Name_Familyname" class="content-text" onkeypress="Check_E(event)">            
             <br><br>
             <label for="Email"> آدرس پست الکترونیکی:</label>
             <input type="text" name="Email" class="content-text"/>            
             <br><br>
 
             <label for="PhoneNumber" >شماره تلفن همراه: </label>
-            <input type="tel" name="PhoneNumber" class="content-text" placeholder="*********09"  pattern="09[0-9]{9}" required >
+            <input type="text" name="PhoneNumber" class="content-text" placeholder="*********۰۹"   >
             <br><br>
             
             <label for="Ssn"> کد ملی:</label>
-            <input type="password" name="Ssn" class="content-text" inputmode="numeric" minlength="12" maxlength="12" placeholder="123-456789-0" pattern="[0-9]{3}-[0-9]{6}-[0-9]" required  >
+            <input type="text" name="Ssn" class="content-text" placeholder="123-456789-0"  >
             <br><br>
             <label for="Password1">رمز عبور:</label>
             <input type="text" name="Password1" class="content-text">
@@ -48,14 +53,14 @@
             <input type="text" name="Password2" class="content-text">
             <br><br>
             <label for="Address">آدرس:  </label>
-            <input type="text" name="Address" class="content-text">
+            <input type="text" name="Address" class="content-text" onkeypress="Check_P(event)" >
             <br><br>
             <label for="Birthday">تاریخ تولد: </label>
-            <input type="date" name="Birthday" class="content-text">
+            <input type="text" name="Birthday" class="content-text" placeholder="۱۳۹۹/۰۹/۰۹">
             <br><br>
             <label for="Status"> وضعیت تأهل: </label>
             <select name="Status" class="content-select" > 
-                
+                <option value="-1"></option>
                 <option value="0">مجرد</option>
                 <option value="1">متاهل</option>
             </select><br><br>
