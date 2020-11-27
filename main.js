@@ -13,14 +13,7 @@ function formValidation() {
     var s = document.getElementsByName("Status")[0];
     var SelectedCityCode = s.options[s.selectedIndex].value;
     
-    var selectedGender = null;
-    for(var i =0 ; i < document.getElementsByName("Gender").length ; i++){
-        if(document.getElementsByName("Gender")[i].checked)
-        {
-            selectedGender= document.getElementsByName("Gender")[i].value;
-        }
-
-    
+  
     var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     var errorMessage = "";
     
